@@ -11,34 +11,35 @@ namespace Week5.Pratik
     {
         static void Main(string[] args)
         {
-            int[] sayılar = new int[10]; // 10 Elemanlı bir dizi oluşturduk
-            int number = 8; // for döngüsü ile rastgele  bir değer atamak için number adında int bir değer tanımladım
-            for (int i = 0; i < sayılar.Length; i++) // for döngüsü ile sayılar dizisine elemanları yazdırdık.
+            int[] sayılar=new int[10];
+            int number = 8;
+            for (int i=0; i<sayılar.Length; i++)
             {
-                number = number + i;
-                sayılar[i] = number;   // sayılar dizisinin i. index ine number değerini atıyoruz
+                number += i;
+                sayılar[i] = number;
             }
-            foreach (var item in sayılar)    // sayılar dizisindeki elemanları yazdırdık
+            
+            Console.WriteLine("Dizideki sayılar ");
+            foreach (var item in sayılar)
             {
-                Console.Write(item+",");
+                Console.Write(item+" ");
             }
             Console.WriteLine(" ");
-            Console.Write("Eklenecek Sayıyı gir:");
-
-            int yeni=Convert.ToInt32(Console.ReadLine());    // yeni eklenecek sayı için karsıdan bir sayı alıyoruz yeni adında
-            Array.Resize(ref sayılar, sayılar.Length+1);     // dizinin boyutunu büyüttük
-            sayılar[sayılar.Length-1] = yeni;                 // yeni eklenecek olan sayıyı dizinin son elemanı olarak atadık
+            Console.Write("Yeni Sayı Gir : ");
+            int yeni=Convert.ToInt32(Console.ReadLine());
+            Array.Resize(ref sayılar, sayılar.Length + 1);
+            sayılar[sayılar.Length-1] = yeni;
             Console.WriteLine("Yeni Dizi");
-            for (int i = 0; i<sayılar.Length; i++)            // dizinin yeni halini yazdırdık
+            for(int i=0;i<sayılar.Length;i++)
             {
                 Console.WriteLine(sayılar[i]);
             }
-            Console.WriteLine("-----Büyükten Küçüğe sıra -----");         
-            Array.Sort(sayılar);      // diziyi küçükten büyüğe sıraladık
-            Array.Reverse(sayılar);   // diziyi ters çevirdik
-            foreach(var item in sayılar )     // diziyi ekrana yazdırdık
+            Array.Sort(sayılar);
+            Array.Reverse(sayılar);
+            Console.WriteLine("Büyükten Küçüğe sıralı");
+            foreach(var item in sayılar)
             {
-                Console.Write(item+" ");
+                Console.Write(item + "-");
             }
             Console.ReadKey();
         }

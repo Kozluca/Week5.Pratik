@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5.Pratik", "Week5.Pratik\Week5.Pratik.csproj", "{ED2FBB30-BF8A-468E-AFBA-53F788D81895}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratik-Lists-1", "Pratik-Lists-1\Pratik-Lists-1.csproj", "{F72B3050-696D-4E98-9750-84A5F3256690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ED2FBB30-BF8A-468E-AFBA-53F788D81895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2FBB30-BF8A-468E-AFBA-53F788D81895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2FBB30-BF8A-468E-AFBA-53F788D81895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72B3050-696D-4E98-9750-84A5F3256690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72B3050-696D-4E98-9750-84A5F3256690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72B3050-696D-4E98-9750-84A5F3256690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72B3050-696D-4E98-9750-84A5F3256690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
