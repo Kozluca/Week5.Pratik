@@ -17,8 +17,8 @@ namespace IMDB_List
         Başla:
             Console.WriteLine("Lütfen Film Adı Girin.");
             string FilmAdı = Console.ReadLine();
-            
-         
+
+
             Console.WriteLine("Lütfen IMDB Gir");
             double IMDBPuan = Convert.ToDouble(Console.ReadLine());
 
@@ -50,8 +50,6 @@ namespace IMDB_List
                 }
 
             }
-          
-
             Console.ReadKey();
         }
 
