@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratik-Lists-1", "Pratik-Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratik-Lists-2", "Pratik-Lists-2\Pratik-Lists-2.csproj", "{5D18AAFB-1495-4BDB-9C7E-8092E4506AE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB-List", "IMDB-List\IMDB-List.csproj", "{9296E85C-2040-4B25-8335-6DEC4C405EA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5D18AAFB-1495-4BDB-9C7E-8092E4506AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D18AAFB-1495-4BDB-9C7E-8092E4506AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D18AAFB-1495-4BDB-9C7E-8092E4506AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9296E85C-2040-4B25-8335-6DEC4C405EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9296E85C-2040-4B25-8335-6DEC4C405EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9296E85C-2040-4B25-8335-6DEC4C405EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9296E85C-2040-4B25-8335-6DEC4C405EA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
