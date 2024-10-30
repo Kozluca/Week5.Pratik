@@ -11,33 +11,33 @@ namespace Week5.Pratik
     {
         static void Main(string[] args)
         {
-            int[] sayılar=new int[10];
+            int[] sayılar = new int[10];
             int number = 8;
-            for (int i=0; i<sayılar.Length; i++)
+            for (int i = 0; i < sayılar.Length; i++)
             {
                 number += i;
                 sayılar[i] = number;
             }
-            
+
             Console.WriteLine("Dizideki sayılar ");
             foreach (var item in sayılar)
             {
-                Console.Write(item+" ");
+                Console.Write(item + " ");
             }
             Console.WriteLine(" ");
             Console.Write("Yeni Sayı Gir : ");
-            int yeni=Convert.ToInt32(Console.ReadLine());
+            int yeni = Convert.ToInt32(Console.ReadLine());
             Array.Resize(ref sayılar, sayılar.Length + 1);
-            sayılar[sayılar.Length-1] = yeni;
+            sayılar[sayılar.Length - 1] = yeni;
             Console.WriteLine("Yeni Dizi");
-            for(int i=0;i<sayılar.Length;i++)
+            for (int i = 0; i < sayılar.Length; i++)
             {
                 Console.WriteLine(sayılar[i]);
             }
             Array.Sort(sayılar);
             Array.Reverse(sayılar);
             Console.WriteLine("Büyükten Küçüğe sıralı");
-            foreach(var item in sayılar)
+            foreach (var item in sayılar)
             {
                 Console.Write(item + "-");
             }

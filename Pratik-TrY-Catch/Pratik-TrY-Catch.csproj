@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9296E85C-2040-4B25-8335-6DEC4C405EA0}</ProjectGuid>
+    <ProjectGuid>{740538A7-D41B-40A7-AD52-E7D4F63AA543}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IMDB_List</RootNamespace>
-    <AssemblyName>IMDB-List</AssemblyName>
+    <RootNamespace>Pratik_TrY_Catch</RootNamespace>
+    <AssemblyName>Pratik-TrY-Catch</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

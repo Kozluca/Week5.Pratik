@@ -8,50 +8,35 @@ using System.Threading.Tasks;
 
 namespace IMDB_List
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            List<string> Filmler = new List<string>();
-            List<double> IMDB = new List<double>();
+            List<Movie> MovieList = new List<Movie>();
         Başla:
-            Console.WriteLine("Lütfen Film Adı Girin.");
-            string FilmAdı = Console.ReadLine();
+            Console.WriteLine("Lütfen Film Adı Giriniz");
+            string name = Console.ReadLine();
+            Console.WriteLine("Lütfen IMDB Puanı Giriniz.");
+            double rating = Convert.ToDouble(Console.ReadLine());
 
+            MovieList.Add(new Movie(name, rating));
 
-            Console.WriteLine("Lütfen IMDB Gir");
-            double IMDBPuan = Convert.ToDouble(Console.ReadLine());
-
-
-            Filmler.Add(FilmAdı);
-            IMDB.Add(IMDBPuan);
-            Console.WriteLine("Başka Film Eklemek İster misin?");
-            string cevap = Console.ReadLine();
-            string answer = cevap.ToLower();
-
+            Console.WriteLine("Yeni Film Eklemek İster misiniz");
+            string _answer = Console.ReadLine();
+            string answer=_answer.ToLower();
             if (answer == "evet")
             {
                 goto Başla;
             }
-            Console.WriteLine("FİLMLER ADI          IMDB PUANI");
+            Console.WriteLine("---FİLM LİSTESİ---");
+            Movie.FilmList(MovieList);
 
-            for (int i = 0; i < Filmler.Count; i++)
-            {
-                Console.WriteLine($"{Filmler[i]} ------------------- {IMDB[i]} ");
-            }
+            Console.WriteLine("İYİ FİLMLER");
+            Movie.GoodFilms(MovieList);
 
-            Console.WriteLine("IMDB PUANI  4-9 ARASINDA OLAN FİLMLER");
-            for (int i = 0; i < IMDB.Count; i++)
-            {
-                double a = IMDB[i];
-                if (a >= 4 && a <= 9)
-                {
-                    Console.WriteLine($"{Filmler[i]}-------{a} ");
-                }
-
-            }
+            Console.WriteLine("A ile Başlayan filmler");
+            Movie.FilmsStartsWithA(MovieList);
             Console.ReadKey();
         }
-
     }
 }
